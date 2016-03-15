@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded',function(event){
    
    input.style.width = '25rem';
    
-   document.body.style.textAlign = 'center';
+  document.body.style.textAlign = 'center';
    button.style.display = 'block';
    button.style.marginLeft = 'auto';
    button.style.marginRight = 'auto';
@@ -25,16 +25,22 @@ document.addEventListener('DOMContentLoaded',function(event){
    hr.style.backgroundColor = 'teal';
    title.style.color = 'teal';
    
-   
+   var container = document.createElement('ul');
    
    button.addEventListener('click',function(event){
+       
        var li = document.createElement('li');
+       
        li.textContent = input.value;
-       li.style.textAlign = 'left';
-       li.style.marginLeft = '25rem';
-       li.style.marginRight = '25rem';
-       li.style.fontSize = '24px';
-       document.body.appendChild(li);
+      li.style.textAlign = 'left';
+      li.style.marginLeft = '25rem';
+      li.style.marginRight = '25rem';
+      li.style.fontSize = '24px';
+    
+       container.appendChild(li);
+       
+       
+       container.insertBefore(li, container.firstChild);
    });
    
    
@@ -43,5 +49,6 @@ document.addEventListener('DOMContentLoaded',function(event){
    document.body.appendChild(button);
    document.body.appendChild(h2);
    document.body.appendChild(hr);
+   document.body.appendChild(container);
    
 });
