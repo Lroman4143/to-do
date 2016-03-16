@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded',function(event){
-    var title = document.createElement('h1');
+   var title = document.createElement('h1');
    var input = document.createElement('input');
    var button = document.createElement('button');
    var h2 = document.createElement('h2');
@@ -39,12 +39,10 @@ document.addEventListener('DOMContentLoaded',function(event){
        container.insertBefore(li, container.firstChild);
    });
    
-   
    document.body.appendChild(title);
    document.body.appendChild(input);
    document.body.appendChild(button);
    document.body.appendChild(h2);
    document.body.appendChild(hr);
    document.body.appendChild(container);
-   
 });
