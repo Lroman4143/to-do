@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded',function(event){
    var button = document.createElement('button');
    var h2 = document.createElement('h2');
    var hr = document.createElement('hr');
+   var container = document.createElement('ul');
    
    title.textContent = 'My Personal To Do List';
    button.textContent = 'submit';
@@ -23,8 +24,6 @@ document.addEventListener('DOMContentLoaded',function(event){
    hr.style.backgroundColor = 'teal';
    title.style.color = 'teal';
    
-   var container = document.createElement('ul');
-   
    button.addEventListener('click',function(event){
        
        var li = document.createElement('li');
@@ -39,6 +38,7 @@ document.addEventListener('DOMContentLoaded',function(event){
        container.insertBefore(li, container.firstChild);
    });
    
+   // append childs
    document.body.appendChild(title);
    document.body.appendChild(input);
    document.body.appendChild(button);
