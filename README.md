@@ -1,3 +1,3 @@
 #To Do List app
 
-### Use link  for previewing
+### Use link http://geekwise-lindsey-roman.github.io/to-do/ for previewing
